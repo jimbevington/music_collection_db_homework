@@ -84,8 +84,8 @@ end
 # album7.delete()
 
 ### TESTING DELETE ARTIST ###
-## doesn't work if the artist has an album in the database
-artist5.delete() # delete Barry Manilow, no albums
+# this command will delete both the ARTIST and all their ALBUMS
+# artist2.delete()
 
 
 # binding.pry
