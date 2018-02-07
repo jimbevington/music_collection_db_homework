@@ -52,8 +52,17 @@ class Artist
   def self.find_by_id(id)
     sql = "SELECT * FROM artists WHERE id = $1"
     values = [id]
+    # assign DATABASE output to a variable
     result = SqlRunner.run(sql, values)
-    return Artist.new(result[0])
+    # map this into an array of Artist objects
+    array_result = result.map{|artist| Artist.new(artist)}
+    # if the array contains an object, return it
+    # else inform user it doesn't exist
+    if array_result.length > 0
+      return array_result[0]
+    else
+      return "This artist does not exist."
+    end
   end
 
 end
