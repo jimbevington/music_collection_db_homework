@@ -35,32 +35,32 @@ album3 = Album.new({
 album4 = Album.new({
   'artist_id'=> artist2.id,
   'name' => 'Chamber Music: 1955 - 1990',
-  'genre' => 'Classical'
+  'genre' => 'classical'
 })
 album5 = Album.new({
   'artist_id'=> artist2.id,
   'name' => 'La Legende D\'Eer',
-  'genre' => 'Classical'
+  'genre' => 'classical'
 })
 album6 = Album.new({
   'artist_id'=> artist3.id,
   'name' => 'Sun Coming Down',
-  'genre' => 'Alternative'
+  'genre' => 'alternative'
 })
 album7 = Album.new({
   'artist_id'=> artist3.id,
   'name' => 'More Than Any Other Day',
-  'genre' => 'Alternative'
+  'genre' => 'alternative'
 })
 album8 = Album.new({
   'artist_id'=> artist4.id,
   'name' => 'Stretch Music',
-  'genre' => 'Jazz'
+  'genre' => 'jazz'
 })
 album9 = Album.new({
   'artist_id'=> artist4.id,
   'name' => 'Yesterday You Said Tomorrow',
-  'genre' => 'Jazz'
+  'genre' => 'jazz'
 })
 
 albums = [album1, album2, album3, album4, album5, album6, album7, album8, album9]
