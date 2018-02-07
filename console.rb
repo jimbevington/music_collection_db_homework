@@ -9,8 +9,9 @@ artist1 = Artist.new({'name' => 'Oneohtrix Point Never'})
 artist2 = Artist.new({'name' => 'Iannis Xenakis'})
 artist3 = Artist.new({'name' => 'Ought'})
 artist4 = Artist.new({'name' => 'Christian Scott'})
+artist5 = Artist.new({'name' => 'Barry Manilow'}) # has no ablums
 
-artists = [artist1, artist2, artist3, artist4]
+artists = [artist1, artist2, artist3, artist4, artist5]
 
 for artist in artists
   artist.save
@@ -81,6 +82,11 @@ end
 
 ### TESTING DELETE ALBUM ###
 # album7.delete()
+
+### TESTING DELETE ARTIST ###
+## doesn't work if the artist has an album in the database
+artist5.delete() # delete Barry Manilow, no albums
+
 
 # binding.pry
 #
