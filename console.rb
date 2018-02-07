@@ -9,11 +9,12 @@ artist1 = Artist.new({'name' => 'Oneohtrix Point Never'})
 artist2 = Artist.new({'name' => 'Iannis Xenakis'})
 artist3 = Artist.new({'name' => 'Ought'})
 artist4 = Artist.new({'name' => 'Christian Scott'})
-#
-artist1.save()
-artist2.save()
-artist3.save()
-artist4.save()
+
+artists = [artist1, artist2, artist3, artist4]
+
+for artist in artists
+  artist.save
+end
 
 album1 = Album.new({
   'artist_id'=> artist1.id,
@@ -68,13 +69,13 @@ for album in albums
   album.save
 end
 
-###  TESTING Update ARTIST NAME  ###
-artist1.name = 'Richard Nixon'
-artist1.update()
+# ###  TESTING Update ARTIST NAME  ###
+# artist1.name = 'Richard Nixon'
+# artist1.update()
 
-###  TESTING Update ARTIST NAME  ###
-album9.name = 'I hate this album'
-album9.update()
+# ###  TESTING Update ARTIST NAME  ###
+# album9.name = 'I hate this album'
+# album9.update()
 
 # binding.pry
 #
