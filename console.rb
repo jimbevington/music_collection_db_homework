@@ -68,8 +68,14 @@ for album in albums
   album.save
 end
 
+###  TESTING Update ARTIST NAME  ###
+artist1.name = 'Richard Nixon'
+artist1.update()
 
+###  TESTING Update ARTIST NAME  ###
+# album9.name = 'I hate this album'
+# album9.update()
 
-binding.pry
-
-nil
+# binding.pry
+#
+# nil
