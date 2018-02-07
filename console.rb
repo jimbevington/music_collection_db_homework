@@ -88,6 +88,6 @@ end
 # artist2.delete()
 
 
-# binding.pry
-#
-# nil
+binding.pry
+
+nil
