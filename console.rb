@@ -76,6 +76,8 @@ end
 # ###  TESTING Update ARTIST NAME  ###
 # album9.name = 'I hate this album'
 # album9.update()
+# album4.genre = 'Showtunes'
+# album4.update()
 
 # binding.pry
 #
