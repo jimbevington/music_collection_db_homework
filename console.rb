@@ -79,6 +79,9 @@ end
 # album4.genre = 'Showtunes'
 # album4.update()
 
+### TESTING DELETE ALBUM ###
+# album7.delete()
+
 # binding.pry
 #
 # nil
